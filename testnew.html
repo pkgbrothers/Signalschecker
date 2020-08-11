@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>*{margin: 0;padding: 0;box-sizing: border-box;font-weight: 700;}
+	body{background-color:powderblue;margin: 0;padding: 0;font-family: "Segoe UI", Verdana, sans-serif;font-style:italic;}a{text-decoration: none;}
+.navbar{background-color: #17A2B8;margin: auto;text-align: center;}
+.navbar a {font-size:4vw;text-align: center;margin-left: 2vw;color: white;}
+
+.haalni{background-color:white;width: 30%;margin: auto;}.aa{background-color:blue;border: 4px solid white;margin: auto;padding: 5px}.signal{border-radius: 20%;background-color:#EF4056;color:white;border: 3px solid yellow;text-align: center;margin: auto;font-size:3vw;}
+
+.fullsignal{width: 72%;margin: auto;background-color: #77AFA6;text-align: center;}
+
+.formm{display: grid;grid-template-columns: 85% 15%;}
+    
+}
+
+.form1{border-radius: 15%;padding: 1vh;}
+.btn{font-size:calc(1.4vw + 1.4vh);background-color: #007BFF;border-radius: 25%;color: white;}
+.htag{color:#fff;word-wrap:break-word;font-size:2.5vw;font-style: normal;font-weight: 500;}
+
+.main{ font-size:calc(1.6vw + 1.6vh);
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+    
+    font-weight: 700;grid-gap: 0 1.5rem;
+   }
+.fbc{background-color:#0B84ED}.ptc{background-color:#E60023}.tbc{background-color:#314358}.rdc{background-color:#F74300}.xgc{background-color:green}.vkc{background-color:#5181B8}.gpc{background-color:#EF4056}.bfc{background-color:#178EEA}.ftc{background-color:black;}
+.main p{color:white;border-radius: 25%;border: 2px solid yellow;margin: 4px;}
+.counter{font-size:calc(1.4vw + 1.4vh);font-weight: bold;color:blue;}
+@media only screen and (max-width: 600px) {
+ .formm{display: grid;grid-template-columns: 78% 22%;}
+}
+@media only screen and (max-width: 400px) {
+ .main{ display: grid;
+grid-template-columns: 1fr;
+     
+ }
+}
+</style>
+
+</head>
+<body>
+	<!--           menu   start                  -->
+<div class="navbar"><a href="https://www.signalcount.com/">Home</a><a href="#">About</a><a  href="#">Contact</a><a href="#">Privacy</a></div>
+<!--           menu        end             -->
+<!--           signalcoun start                     -->
+<div class="haalni">
+<div class="aa">
+<a title="Social Signals Checker" href="https://www.signalcount.com/"><p class="signal">Signalcount.com</p></a>
+</div>
+</div>
+<!--           signalcoun end                     -->
+
+<div class="fullsignal">
+	<br>
+<form class="formm" method=get >
+<input aria-label="URL for signals" type="text" id="urlInput" onfocus="this.value=''"  class="form1" name="url" placeholder="Enter your url and click to check" value="">
+<button class="btn" id="getJSON" type="submit">CHECK</button></form>
+<h2 class='htag' id="htag">Add url for check Social Signals</h2>
+
+<div class="main">
+<div><p class="fbc">Facebook</p><div class="counter" id="fbcount">0</div></div>
+<div><p class="tbc">Tumblr</p><div class="counter" id="tbcount">0</div></div>
+<div><p class="ptc">Pinterest</p><div class="counter" id="ptcount">0</div></div>
+<div><p class="rdc">Reddit</p><div class="counter" id="rdcount">0</div></div>
+<div><p class="xgc">Xing</p><div class="counter" id="xgcount">0</div> </div>
+<div><p class="vkc">VK</p><div class="counter" id="vkcount">0</div></div>
+<div><p class="bfc">Buffer</p><div class="counter" id="bfcount">0</div></div>
+<div><p class="gpc">Getpocket</p><div class="counter" id="gpcount">0</div></div>
+<div><p class="ftc">Totals</p><div class="counter" id="tscount">0</div></div>
+
+</div>
+</div></div>
+
+
+</body>
+</html>
