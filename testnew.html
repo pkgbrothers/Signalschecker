@@ -102,7 +102,11 @@ grid-template-columns: 1fr;
             $("#bfcount").text(t.shares)
         }), $.getJSON("https://yacdn.org/proxy/https://widgets.getpocket.com/api/saves?url=" + $URL, function(t) {
             $("#gpcount").text(t.saves)
-        }), $("#data-tab").fadeIn()
+        }), 
+		$.post("https://partap.tk/signalcount.php?url=" + $URL, function(t) {
+            $("#xgcount").text(t.share_counter)
+        }),
+		$("#data-tab").fadeIn()
     }
 }
 var myVar = setInterval(myTimer, 5e3);
