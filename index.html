@@ -1,16 +1,17 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Social Signals checker for Facebook Pinterest Reddit Tumblr Xing vk and Getpocket Any Website, Blog Post, Youtube Video, App etc">
+<meta name="description" content="Social Signals checker for Facebook Pinterest Reddit Tumblr Xing vk and WowLinks Any Website, Blog Post, Youtube Video, App etc">
 <meta name="keywords" content="social signals checker, social shares checker, check social signals,social signals tracker, Facebook, Pinterest, Xing, reddit, tumblr, Signals checker, count ">
 <meta name="a943686e151041b67084f88bd2d0d27b30283f23" content="a943686e151041b67084f88bd2d0d27b30283f23" />
   <link rel="canonical" href="https://www.signalcount.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://www.signalcount.com/Social-Signals-cheker-tool.png" class="img-responsive" />
 <link rel="icon" href="logo%20Signalcount.jpg" type="image/jpg" sizes="32x32">
+<link rel="external" href="https://wowlinks.net" title="WowLinks Social Bookmarking Site">
 <title>Social Signals Checker Tool Facebook Reddit Tumblr Pinterest</title>
 <meta name="author" content="https://www.signalcount.com/">
-<meta property="og:description" content="Social Signals checker for Facebook Pinterest Reddit Tumblr Xing vk and Getpocket Any Website, Blog Post, Youtube Video, App etc" />
+<meta property="og:description" content="Social Signals checker for Facebook Pinterest Reddit Tumblr Xing vk and WowLinks Any Website, Blog Post, Youtube Video, App etc" />
 <meta property="og:title" content="Social Signals Checker" />
 <meta property="og:url" content="https://www.signalcount.com/" />
 <style>*{margin: 0;padding: 0;box-sizing: border-box;font-weight: 700;border:0;}
@@ -46,7 +47,7 @@ body{background-color:#b0e0e6;margin:0;padding:0;font-family:"Segoe UI",Verdana,
       "@type": "WebApplication",
       "name": "SignalCount Social Signals Checker",
       "url": "https://www.signalcount.com/",
-      "description": "Check social signals (Facebook, Pinterest, Reddit, Tumblr, Xing, VK, Buffer, GetPocket) for any URL using official APIs and show aggregate totals.",
+      "description": "Check social signals (Facebook, Pinterest, Reddit, Tumblr, Xing, VK, Buffer, WowLinks) for any URL using official APIs and show aggregate totals.",
       "applicationCategory": "WebApplication",
       "operatingSystem": "Web",
       "browserRequirements": "Modern browser with JavaScript enabled",
@@ -111,7 +112,7 @@ body{background-color:#b0e0e6;margin:0;padding:0;font-family:"Segoe UI",Verdana,
 <div><p class="xgc">Xing</p><div class="counter" id="xgcount">0</div> </div>
 <div><p class="vkc">VK</p><div class="counter" id="vkcount">0</div></div>
 <div><p class="bfc">Buffer</p><div class="counter" id="bfcount">0</div></div>
-<div><p class="gpc">Getpocket</p><div class="counter" id="gpcount">0</div></div>
+<div><p class="gpc">WowLinks</p><div class="counter" id="gpcount">0</div></div>
 <div><p class="ftc" id="fftc" >Totals Signal</p><div class="counter" id="tscount">0</div></div>
 </div></div></div>
 
@@ -120,6 +121,12 @@ body{background-color:#b0e0e6;margin:0;padding:0;font-family:"Segoe UI",Verdana,
 
 <div class="qa">
     <h1>Social Signals Checker</h1>
+	<p style="text-align:center; font-size:1.3vw;">
+🔥 Submit your links & boost signals using 
+<a href="https://wowlinks.net" target="_blank" style="color:blue;">
+WowLinks Bookmark Platform
+</a>
+</p>
    <h2>Q: How to use it?</h2>
    <p>A: To use a social signals checker tool, you will need to provide the URL of the webpage or website for which you want to check the social signals. The tool will then analyze the page and provide information on the number of social media shares, likes, and links for that page from various social media platforms such as Facebook, Pinterest, Tumblr, and many more. Some tools may also provide information on the number of backlinks from other websites.</p>
 
@@ -139,8 +146,6 @@ body{background-color:#b0e0e6;margin:0;padding:0;font-family:"Segoe UI",Verdana,
 <p>A: Reddit Signals count limit per URL max 100.</p>
 </div>
 <script>
-async function baba(){var t=new URL(window.location.href),e=t.searchParams.getAll("url");if(u=encodeURIComponent(s=(e+" ").replace(/\s/g,"")),y="https://thingproxy.freeboard.io/fetch/","https://www.signalcount.com/"==t);else{var n=document.createElement("script");n.src="imga.js",document.getElementById("foo").style.visibility="visible",document.getElementsByTagName("head")[0].appendChild(n),document.getElementById("htag").innerHTML=e,async function(){let t=await fetch(`https://graph.facebook.com/?id=${u}&fields=engagement&access_token=507650223314728|ec490e0bba2a68209fb4a7ee9ee71261`),e=await t.json();fdp=e.engagement.reaction_count+e.engagement.comment_count+e.engagement.share_count+e.engagement.comment_plugin_count,document.getElementById("fbcount").innerHTML=fdp}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal5.php?url=${u}`),e=await t.json();document.getElementById("tbcount").innerHTML=e.response.note_count}(),async function(){let t=await fetch(`https://api.pinterest.com/v1/urls/count.json?url=${u}`),e=await t.text(),n=await e.split(":")[3].split("}");document.getElementById("ptcount").innerHTML=n[0]}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal6.php?url=${u}`),e=await t.json();document.getElementById("rdcount").innerHTML=e.data.dist}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal2.php?url=${u}`),e=await t.text(),n=await e.split(",")[1].split(")");document.getElementById("vkcount").innerHTML=n[0]}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal.php?url=${u}`),e=await t.json();document.getElementById("xgcount").innerHTML=e.share_counter}();var a=setInterval(function(){var t=document.getElementById("fbcount").innerHTML,e=document.getElementById("tbcount").innerHTML,n=document.getElementById("ptcount").innerHTML,i=document.getElementById("rdcount").innerHTML,o=document.getElementById("vkcount").innerHTML,c=document.getElementById("xgcount").innerHTML,l=(t=parseFloat(t))+(e=parseFloat(e))+(n=parseFloat(n))+(i=parseFloat(i))+(o=parseFloat(o))+(c=parseFloat(c));document.getElementById("tscount").innerHTML=l,7<++bbl&&clearInterval(a)},2e3);bbl=1}}baba();var node=document.getElementById("khaup"),btn=document.getElementById("foo");btn.onclick=function(){document.getElementById("foo").style.visibility="hidden",domtoimage.toBlob(document.getElementById("khaup")).then(function(t){window.saveAs(t,"Signalcount.png")})};
+async function baba(){var t=new URL(window.location.href),e=t.searchParams.getAll("url");if(u=encodeURIComponent(s=(e+" ").replace(/\s/g,"")),"https://www.signalcount.com/"==t);else{var n=document.createElement("script");n.src="imga.js",document.getElementById("foo").style.visibility="visible",document.getElementsByTagName("head")[0].appendChild(n),document.getElementById("htag").innerHTML=e,async function(){let t=await fetch(`https://graph.facebook.com/?id=${u}&fields=engagement&access_token=507650223314728|ec490e0bba2a68209fb4a7ee9ee71261`),e=await t.json();fdp=e.engagement.reaction_count+e.engagement.comment_count+e.engagement.share_count+e.engagement.comment_plugin_count,document.getElementById("fbcount").innerHTML=fdp}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal5.php?url=${u}`),e=await t.json();document.getElementById("tbcount").innerHTML=e.response.note_count}(),async function(){let t=await fetch(`https://api.pinterest.com/v1/urls/count.json?url=${u}`),e=await t.text(),n=await e.split(":")[3].split("}");document.getElementById("ptcount").innerHTML=n[0]}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal6.php?url=${u}`),e=await t.json();document.getElementById("rdcount").innerHTML=e.data.dist}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal2.php?url=${u}`),e=await t.text(),n=await e.split(",")[1].split(")");document.getElementById("vkcount").innerHTML=n[0]}(),async function(){let t=await fetch(`https://partap.alwaysdata.net/signal.php?url=${u}`),e=await t.json();document.getElementById("xgcount").innerHTML=e.share_counter}(),async function(){let t=await fetch(`https://wowlinks.net/api/?url=${u}`),e=await t.json();document.getElementById("gpcount").innerHTML=e.count??0}();var a=setInterval(function(){var t=document.getElementById("fbcount").innerHTML,e=document.getElementById("tbcount").innerHTML,n=document.getElementById("ptcount").innerHTML,o=document.getElementById("rdcount").innerHTML,c=document.getElementById("vkcount").innerHTML,i=document.getElementById("xgcount").innerHTML,l=document.getElementById("gpcount").innerHTML,u=(t=parseFloat(t))+(e=parseFloat(e))+(n=parseFloat(n))+(o=parseFloat(o))+(c=parseFloat(c))+(i=parseFloat(i))+(l=parseFloat(l));document.getElementById("tscount").innerHTML=u,7<++bbl&&clearInterval(a)},2e3);bbl=1}}baba();var node=document.getElementById("khaup"),btn=document.getElementById("foo");btn.onclick=function(){document.getElementById("foo").style.visibility="hidden",domtoimage.toBlob(document.getElementById("khaup")).then(function(t){window.saveAs(t,"Signalcount.png")})};
 </script>
   </body></html>
-
-
